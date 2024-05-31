@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jsCalendar 라이브러리 사용을 위한 코드 -->
+    <link rel="stylesheet" type="text/css" href="./jsCalendar_v1.4.5/source/jsCalendar.css">
+    <script type="text/javascript" src="./jsCalendar_v1.4.5/source/jsCalendar.js"></script>
+    <script type="text/javascript" src="./jsCalendar_v1.4.5/source/jsCalendar.lang.ko.js"></script>
+    <script src="./project.js"></script>
+</head>
+<style>
+    *{
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+    .question{
+        margin-top: 200px;
+        text-align: center;
+        
+    }
+    table{
+        border: 1px solid;
+        margin: 30px auto;
+        border: 1px solid #000;
+    }
+    
+    #anniversary {
+        width: 660px;
+        height: 200px;
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid #000;
+        margin: auto;
+    }
+
+    #container{
+        width: 660px;
+        border-collapse: collapse;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    
+</style>
+<body>
+    <div class="question">
+        <h3>다음 <보기>는 대한민국의 국기게양일입니다. <br>
+            각 7가지 날짜를 아래의 달력에 동그라미 해보세요.
+        </h3>
+    </div>
+    <table id="anniversary">
+        <th colspan="4">보기</th>
+        <tr>
+            <td>3월 1일</td>
+            <td>3 1절</td>
+            <td>
+                10월 1일
+            </td>
+            <td>국군의 날</td>
+        </tr>
+        <tr>
+            <td>6월 6일</td>
+            <td>현충일</td>
+            <td>10월 3일</td>
+            <td>개천절</td>
+        </tr>
+        <tr>
+            <td>7월 17일</td>
+            <td>제헌절</td>
+            <td>10월 9일</td>
+            <td>한글날</td>
+        </tr>
+        <tr>
+            <td>8월 15일</td>
+            <td>광복절</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!--달력을 생성하는 컨테이너-->
+    <div id="container"></div>
+</body>
+
+</html>
