@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (totalScore === 7) {
             alert("정답입니다. 대단하네요!");
         } else {
-            alert("아쉽네요! 다시 한번 할까요?");
+            
+            alert(`${alert}개 맞췄습니다. 아쉽네요! 다시 한번 할까요?`);
         }
 
         // 1회가 끝났음으로 모든 정보를 초기화
