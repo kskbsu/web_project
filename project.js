@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("정답입니다. 대단하네요!");
         } else {
 
-            alert(`${alert}개 맞췄습니다. 아쉽네요! 다시 한번 할까요?`);
+            alert(`${totalScore}개 맞췄습니다. 아쉽네요! 다시 한번 할까요?`);
         }
         selectedDateElements.forEach(selectedDateElement => {
             selectedDateElement.textContent = '';
